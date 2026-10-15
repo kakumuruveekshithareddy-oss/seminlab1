@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Online Store</h1>
+
+    <div class="box" id="loginBox">
+        <h2 id="heading">Login</h2>
+
+        <input type="text" id="name" placeholder="Enter Name" hidden>
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="message"></p>
+        <p id="switchText">
+            New user? <a href="#" onclick="showSignup()">Sign Up</a>
+        </p>
+    </div>
+
+    <div id="products" hidden>
+        <h2>Our Products</h2>
+
+        <div class="items">
+            <div class="item">
+                <img src="headphones.jpg">
+                <h3>Headphones</h3>
+                <p>Price: ₹999</p>
+            </div>
+
+            <div class="item">
+                <img src="bag.jpg">
+                <h3>Backpack</h3>
+                <p>Price: ₹799</p>
+            </div>
+
+            <div class="item">
+                <img src="mobile.jpg">
+                <h3>Mobile</h3>
+                <p>Price: ₹24499</p>
+            </div>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
